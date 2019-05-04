@@ -1,0 +1,8 @@
+body {
+    text-align: center;
+    font-family: "微軟正黑體";
+}
+h2 {
+    /* 歌曲名稱的顯示空間 */
+    height: 32px;
+}
