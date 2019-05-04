@@ -119,23 +119,23 @@ $(document).keydown(function press(event){
 	}
 });
 
-$("#bdown").click(function(){
-    console.log(1);
-	var e = $.Event("keydown");
+$("#b_down").click(function(){
+	var e = jQuery.Event("keydown");
 	e.which = 40;
+    console.log(e.which);
 	$(document).trigger(e);
 });
-$("#bright").click(function(){
+$("#b_right").click(function(){
 	var e = $.Event("keydown");
 	e.which = 39;
 	$(document).trigger(e);
 });
-$("#btop").click(function(){
+$("#b_top").click(function(){
 	var e = $.Event("keydown");
 	e.which = 38;
 	$(document).trigger(e);
 });
-$("#bleft").click(function(){
+$("#b_left").click(function(){
 	var e = $.Event("keydown");
 	e.which = 37;
 	$(document).trigger(e);
