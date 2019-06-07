@@ -13,7 +13,7 @@ $(document).ready(function() {
 			//新增選項
 			for(var x=0;x<questions[0].answers.length;x++)
 			{
-				$("#options").append("<input name='options' type='radio' value="+x+">"+"<label>"+questions[0].answers[x][0]+"</label><br><br>");
+				$("#options").append("<label><input name='options' type='radio' value="+x+">"+questions[0].answers[x][0]+"</label><br><br>");
 			}
 			$("#startButton").attr("value","Next");
 		}
@@ -45,7 +45,7 @@ $(document).ready(function() {
 						//顯示新選項
 						for(var x=0;x<questions[currentQuiz].answers.length;x++)
 						{
-							$("#options").append("<input name='options' type='radio' value="+x+">"+"<label>"+questions[currentQuiz].answers[x][0]+"</label><br><br>");
+							$("#options").append("<label><input name='options' type='radio' value="+x+">"+questions[currentQuiz].answers[x][0]+"</label><br><br>");
 						}
 					}
 					return false;
